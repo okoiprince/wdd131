@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Prince Okoi</title>
+
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Prince Okoi, web design and development resources, landing page">
+    <meta name="author" content="Prince Okoi">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1>WDD 131 Blazzard</h1>
+
+    <header>
+
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+    </header>
+    <nav>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/28?lang=eng">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+    <main>
+
+        <h1>Prince F. Okoi</h1>
+
+        <div class="grid">
+
+            <section class="card">
+
+                <h2>About Me</h2>
+
+                <div class="about">
+
+                    <p>
+                        My name is Prince, friends sometimes call me Young Prof. I was born Nigeria and currently reside in Cross River, Calabar, a renowned tourist destination celebrated for its rich culture, vibrant traditions and warm hospitality. I am deeply passionate about education and firmly believe in continuous personal growth. My strong interest in technology inspired me to pursue a first degree in Computer Science and currently acquiring another degree in Software Engineering. I value adaptability, innovation and a user-focused solutions and I am committed to growing as a developer while contributing value wherever technology meets opportunity.
+                     </p>
+
+                    <img src="images/profile.jpg" alt="profile picture">
+
+                </div>
+
+                <div class="location">
+                    <h3>Cross River, Nigeria</h3>
+                    <hr>
+
+                    <figure class="flag">
+                        <img src="images/flag-of-nigeria.png" alt="Nigeria Flag">
+                        <figcaption>Official Flag of Nigeria</figcaption>
+                    </figure>
+                    <p class="location-info">
+                        Cross River State is located in southeastern Nigeria and is known for its rich cultural heritage diverse ethnic groups, and abundant natural attractions. It is home to Calabar, a historic city famous for tourism, festivals and hospitality. The state is also noted for its rainforests, wildlife reserves, and role as one of Nigeria’s leading tourism destinations.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+
+                </ul>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="currentyear"></span> 🌺 Okoi Prince Francis 🌺 Nigeria 
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>
