@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #eee;
+    color: #333;
+}
+
+header {
+    background-color: rgb(8, 1, 94);
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 20px;
+}
+
+#menu {
+    display: block;
+}
+
+#nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    list-style: none;
+}
+
+#nav-links.show {
+    display: flex;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    display: block;
+}
+
+#nav-links li a:hover {
+    background-color: white;
+    color: rgb(2, 0, 128);
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 5px;
+    color: rgb(0, 9, 128);
+    font-size: 14px;
+}
+
+#lastModified {
+    color: gold;
+    font-size: 10pt;
+}
+
+footer {
+    background-color: rgb(8, 1, 94);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
