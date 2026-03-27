@@ -1,0 +1,32 @@
+@media screen and (min-width: 750px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .card {
+        margin: 0;
+        text-align: left;
+        width: 260px;
+    }
+
+    .data {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20%;
+        right: 5%;
+    }
+
+    .weather h2::before {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
