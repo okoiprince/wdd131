@@ -1,0 +1,56 @@
+:root {
+    --back: #26734d;
+    --back2: #26734d80;
+    --foredark: #000;
+    --forelight: #ffffff;
+    --border: #000;
+    --borderlight: #5454544d;
+    --shadow: #808080;
+    --zebra: #ededed;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    padding: 5%;
+}
+
+table {
+    width: 500px;
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+    text-align: center;
+
+    caption {
+        caption-side: bottom;
+        font-size: smaller;
+        padding: 0.5rem;
+    }
+
+    th,
+    td {
+        padding: 0.5em 1rem;
+        border: 1px solid var(--border);
+        white-space: pre;
+        font-weight: bold;
+    }
+
+    thead {
+        color: var(--forelight);
+        font-size: larger;
+        font-weight: bold;
+        background-color: var(--foredark);
+
+        tr:nth-last-child(1) {
+            background-color: #333;
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: var(--shadow);
+    }
+
+}
+
+.blank {
+    background-color: var(--foredark);
+}
