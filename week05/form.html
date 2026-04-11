@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Prince Okoi</title>
+
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Prince Okoi, web design and development resources, landing page">
+    <meta name="author" content="Prince Okoi">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="pf1">
+
+            <!-- Product -->
+            <label>
+                Product Name
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+
+            <!-- Rating -->
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </fieldset>
+
+            <!-- Date -->
+            <label>
+                Date of Installation
+                <input type="date" id="date" name="date" required>
+            </label>
+
+            <!-- Features -->
+            <fieldset>
+                <legend>
+                    Which features do you find useful?
+                    <span class="optional">(Check all that apply)</span>
+                </legend>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="durability">
+                    <span>Durability</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="ease">
+                    <span>Ease of Use</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="performance">
+                    <span>Performance</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="features" value="design">
+                    <span>Design</span>
+                </label>
+            </fieldset>
+
+            <!-- Review -->
+            <label>
+                Written Review <span class="optional">(Optional)</span>
+                <textarea id="review" name="review"></textarea>
+            </label>
+
+            <!-- Name -->
+            <label>
+                Your Name <span class="optional">(Optional)</span>
+                <input type="text" id="username" name="username">
+            </label>
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+
+        <p>
+           &copy;<span id="currentyear"></span> 🌺 Okoi Prince Francis 🌺 Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
