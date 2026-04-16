@@ -1,0 +1,119 @@
+@media screen and (min-width: 768px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .hero img {
+        opacity: 0.8;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    nav {
+        display: block !important;
+        margin-left: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 16px;
+        color: #e1e9ff;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger */
+    }
+
+    .home-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .home-gallery figure {
+        width: 200px;
+        text-align: center;
+        margin: 0;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-gallery figcaption {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .home-gallery figure:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .display-picture {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: 2rem;
+    }
+
+    .aside-box {
+        width: 50%;
+        box-shadow: 0 4px 8px grey;
+        padding: 2rem;
+    }
+
+    .newsletter {
+        padding: 1.5rem;
+    }
+
+    /* B-Cakes Product Gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*Contact Form and Order */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    /*Product Review Page */
+}

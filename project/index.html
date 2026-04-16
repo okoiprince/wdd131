@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Cakes Company </title>
+
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Prince Okoi, web design and development resources, project">
+    <meta name="author" content="Prince Francis Okoi">
+
+    <link rel="stylesheet" href="styles/cake.css">
+    <link rel="stylesheet" href="styles/cake-large.css">
+    <script src="scripts/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/baking-logo.webp" alt="A Baking Site Logo">
+        <div class="logo">
+            <h1>B-Cakes</h1>
+            <p>Delicious Cakes from Cross River State</p>
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Product Reviews</a></li>
+                <li><a href="gallery.html">Products Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Background Cake">
+            </picture>
+
+            <div class="data">
+                <p>The best place to get your favourite cakes at a click
+                    <span>we produce all kinds of cakes, such cupcakes, wedding cakes,</span>
+                    <span>birthday cakes, eggrolls, burger, bread, chinchin and others </span>
+                </p>
+
+                <a href="contact.html" class="index-btn"> Place Order</a>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div>
+                <h2>Welcome to B-Cakes</h2>
+                <p>Here we showcase our cake products, provide ordering
+                    information, display pricing and allow customers to easily contact the business</p>
+            </div>
+        </section>
+
+        <section class="cakes">
+            <div class="home-gallery">
+                <figure>
+                    <img src="images/sample1.jpg" alt="Sample cake">
+                    <figcaption>🎂<br>
+                        Cakes</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sample2.jpg" alt="Sample pizza">
+                    <figcaption>🍕<br>Pizza</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sample3.jpg" alt="Sample Meat pie">
+                    <figcaption>🥟<br>Meat pie</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sample4.jpg" alt="Chin-chin">
+                    <figcaption>🍪<br>Chin-Chin</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="box">
+            <h2>Sweetness made easy. Order today!</h2>
+            <div class="display-picture">
+                <img src="images/woman-cake.jpg" alt="woman with cake">
+
+                <div class="aside-box">
+                    <h2>Where Every Cake Craving Comes True</h2>
+                    <p>Explore our delicious range of cakes and treats, check out pricing with ease and place your
+                        orders in just a few clicks. Whether it’s a birthday, wedding, or special craving, we’ve made it
+                        simple for you to connect with us and get exactly what you want.<br><br><a href="contact.html" class="index-btn">GET CAKE</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="news-name">Name</label>
+                    <input type="text" id="news-name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="news-email">Email</label>
+                    <input type="email" id="news-email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> B-Cakes  🌺 Okoi Prince Francis 🌺 Nigeria </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

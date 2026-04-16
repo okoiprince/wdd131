@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Cakes Company </title>
+
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Prince Okoi, web design and development resources, project">
+    <meta name="author" content="Prince Francis Okoi">
+
+    <link rel="stylesheet" href="styles/cake.css">
+    <link rel="stylesheet" href="styles/cake-large.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/rating.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/baking-logo.webp" alt="A Baking Site Logo">
+        <div class="logo">
+            <h1>B-Cakes</h1>
+            <p>Delicious Cakes from Cross River State</p>
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Product Reviews</a></li>
+                <li><a href="gallery.html">Products Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" class="pf1">
+
+            <!-- Product -->
+            <label for="product">
+                Product Name
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+
+            <!-- Rating -->
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">★</label>
+                </div>
+            </fieldset>
+
+            <!-- Date -->
+            <label for="date">
+                Date of Installation
+                <input type="date" id="date" name="date" required>
+            </label>
+
+            <!-- Features -->
+            <fieldset>
+                <legend>
+                    What did you enjoy about your order?
+                    <span class="optional">(Check all that apply)</span>
+                </legend>
+
+                <label for="taste" class="checkbox">
+                    <input type="checkbox" id="taste" name="features" value="taste">
+                    <span>Delicious Taste</span>
+                </label>
+
+                <label for="design" class="checkbox">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <span>Beautiful Cake Design</span>
+                </label>
+
+                <label for="texture" class="checkbox">
+                    <input type="checkbox" id="texture" name="features" value="texture">
+                    <span>Fresh & Soft Texture</span>
+                </label>
+
+                <label for="delivery" class="checkbox">
+                    <input type="checkbox" id="delivery" name="features" value="delivery">
+                    <span>Fast Delivery</span>
+                </label>
+
+                <label for="pricing" class="checkbox">
+                    <input type="checkbox" id="pricing" name="features" value="pricing">
+                    <span>Affordable Pricing</span>
+                </label>
+
+                <label for="service" class="checkbox">
+                    <input type="checkbox" id="service" name="features" value="services">
+                    <span>Excellent Customer Service</span>
+                </label>
+            </fieldset>
+
+            <!-- Product Review -->
+            <label for="review">
+                Written Review <span class="optional">(Optional)</span>
+                <textarea id="review" name="review"></textarea>
+            </label>
+
+            <!-- Username -->
+            <label for="username">
+                Your Name <span class="optional">(Optional)</span>
+                <input type="text" id="username" name="username">
+            </label>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+
+            <p id="count"></p>
+        </form>
+
+        <section class="box">
+            <h2>Sweetness made easy. Order today!</h2>
+            <div class="display-picture">
+                <img src="images/woman-cake.jpg" alt="woman with cake">
+
+                <div class="aside-box">
+                    <h2>A Taste of Happiness in Every Slice</h2>
+                    <p>Step into our gallery and discover a world of irresistible flavors and beautifully crafted
+                        treats. From elegant celebration cakes to everyday delights, each creation is made with
+                        passion, precision, and a touch of sweetness.<br><br><a href="contact.html"
+                            class="index-btn">GET CAKE</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> B-Cakes 🌺 Okoi Prince Francis 🌺 Nigeria</p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
