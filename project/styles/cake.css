@@ -335,6 +335,7 @@ footer {
 
 .form-row textarea {
     min-height: 120px;
+    min-width: 100%;
     resize: vertical;
 }
 
